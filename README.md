@@ -1,33 +1,17 @@
-# android-TFDetect
+# Remote-Marker-based-Tracking-using-MobileNet-SSD
+This is the demo app for my project: Remote Marker based tracking for accurate drone landing for the 2017 Qualcomm AI Developer Contest https://developforai.com/
 
-This sample demonstrates how to use [TensorFlow Android Inference Interface](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/android) and [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/object_detection/) to do object detection in android.
+Demonstration video: https://drive.google.com/open?id=16DTJ-m5_PBA6AP_fxwg01NNGXCUMtnzE
 
-This project focuses on object detection, you may refer to https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android/ for other samples.
+Please follow these steps in order to run my app.
 
+Installation step:
+1. Copy Marker folder into DCIM\Camera\ manually
+2. Install marker-detection-release.apk on the device
+3. At the first time the app open, please allow all the required permissions.
 
-## Pre-requisites
-
-- Android Studio
-
-- Android SDK v21
-
-- Android Build Tools v21.1.1
-
-- Android Support Repository
-
-- Camera2 API is not needed.
-
-## Getting Started
-
-1. Download the model and labels_list.
-
-    ```bash
-    # From android-TFDetect/assets/
-    wget https://storage.googleapis.com/download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_android_export.zip
-    unzip ssd_mobilenet_v1_android_export.zip
-    rm ssd_mobilenet_v1_android_export.zip
-    ```
-
-2. Build.
-
-    This sample uses the Gradle build system. To build this project, use the "gradlew build" command or use "Import Project" in Android Studio.
+Demo:
+1. Click "Load Model" to load the pretrained MobileNet-SSD Marker detection
+2. Click "Detection" button to begin marker detection in all images of "Marker" folder above.
+These test images are not included in my training data. If you want to have further test then you can download additional data from this link: https://www.dropbox.com/s/vzyl12jrc3dyflk/Marker_full.zip?dl=0 (please change the folder name to "Marker" if you want to use it)
+3. The result images are saved at the folder DetectedResult_test as png format.
