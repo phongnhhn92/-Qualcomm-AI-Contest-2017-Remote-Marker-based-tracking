@@ -1,7 +1,7 @@
 # Remote-Marker-based-Tracking-using-MobileNet-SSD
 This is the demo app for my project: Remote Marker based tracking for accurate drone landing for the 2017 Qualcomm AI Developer Contest https://developforai.com/
 
-Demonstration video: https://drive.google.com/open?id=16DTJ-m5_PBA6AP_fxwg01NNGXCUMtnzE
+Demonstration video: https://www.youtube.com/watch?v=Lnm4uiw3tv4
 
 Please follow these steps in order to run my app.
 
